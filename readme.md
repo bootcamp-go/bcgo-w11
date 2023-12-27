@@ -1,4 +1,4 @@
-wave 11
+# Wave 10
 
 # Frequently Asked Questions (FAQ)
 
@@ -30,67 +30,67 @@ open the config file and add the following
 ```bash
 Host *
   AddKeysToAgent yes
-    UseKeychain yes
-      IdentityFile ~/.ssh/id_rsa
-      ```
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+```
 
-      ---
+---
 
-      **✔ Github**
-      > copy the SSH key
-      ```bash
-      pbcopy < ~/.ssh/id_rsa.pub
-      ```
+**✔ Github**
+> copy the SSH key
+```bash
+pbcopy < ~/.ssh/id_rsa.pub
+```
 
-      > go to your Github account and add the SSH key
+> go to your Github account and add the SSH key
 
-      ---
+---
 
-      **✔ Test**
+**✔ Test**
 
-      We test the SSH connection to Github (the identity file is specified in the config file)
+We test the SSH connection to Github (the identity file is specified in the config file)
 
-      > test the SSH connection
-      ```bash
-      ssh -T git@github.com
-      ```
+> test the SSH connection
+```bash
+ssh -T git@github.com
+```
 
-      In order to test other identities, you can use the following command
-      ```bash
-      ssh -i ~/.ssh/key -T git@github.com
-      ```
+In order to test other identities, you can use the following command
+```bash
+ssh -i ~/.ssh/key -T git@github.com
+```
 
-      <br>
+<br>
 
-      Up to now you have configured the SSH key (public / private), indicate ssh which identity file to use and added the SSH key (public) to your Github account.
-      We can use an optional service to manage the SSH keys (cache) and avoid to enter the phrase each time we use the SSH key.
+Up to now you have configured the SSH key (public / private), indicate ssh which identity file to use and added the SSH key (public) to your Github account.
+We can use an optional service to manage the SSH keys (cache) and avoid to enter the phrase each time we use the SSH key.
 
-      ---
+---
 
-      **✔ SSH-Agent - Optional**
+**✔ SSH-Agent - Optional**
 
-      initialize ssh-agent as a service of ssh keys management (cache) (optional)
+initialize ssh-agent as a service of ssh keys management (cache) (optional)
 
-      > start the ssh-agent in the background
-      ```bash
-      eval "$(ssh-agent -s)"
-      ```
+> start the ssh-agent in the background
+```bash
+eval "$(ssh-agent -s)"
+```
 
-      > add your SSH private key to the ssh-agent
-      ```bash
-      ssh-add -K ~/.ssh/id_rsa
-      ```
+> add your SSH private key to the ssh-agent
+```bash
+ssh-add -K ~/.ssh/id_rsa
+```
 
-      <br>
-      <br>
-      <br>
+<br>
+<br>
+<br>
 
-      ## ▶ Terminal
-      in progress...
+## ▶ Terminal
+in progress...
 
-      <br>
-      <br>
-      <br>
+<br>
+<br>
+<br>
 
-      ## ▶ Go
-      in progress...
+## ▶ Go
+in progress...
