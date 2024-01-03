@@ -1,0 +1,1 @@
+memory address (hex) -> 0x0008
