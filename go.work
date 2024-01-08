@@ -19,4 +19,5 @@ use (
 	./02-Bases/07-Error-Handling/code/app2
 	./02-Bases/07-Error-Handling/solutions/5
 	./02-Bases/10-Repaso/code/app
+	./02-Bases/11-Desafio-Cierre/app
 )
