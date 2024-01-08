@@ -12,6 +12,7 @@ use (
 	./02-Bases/04-Unit-Testing/solutions/4
 	./02-Bases/04-Unit-Testing/solutions/5
 	./02-Bases/05-Structs-Composition/code/app
+	./02-Bases/05-Structs-Composition/solutions/app1
 	./02-Bases/06-Interfaces/app
 	./02-Bases/07-Error-Handling/code/app
 	./02-Bases/07-Error-Handling/code/app2
