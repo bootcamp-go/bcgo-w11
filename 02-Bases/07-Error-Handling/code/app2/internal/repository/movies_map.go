@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"app/internal"
+	"app/error-handling/second/internal"
 	"fmt"
 )
 

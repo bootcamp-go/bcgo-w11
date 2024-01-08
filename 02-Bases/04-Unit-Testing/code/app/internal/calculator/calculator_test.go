@@ -1,7 +1,7 @@
 package calculator_test
 
 import (
-	"app/internal/calculator"
+	"app/unit-testing/internal/calculator"
 	"testing"
 
 	"github.com/stretchr/testify/require"

@@ -1,4 +1,4 @@
-module app/unit-testing
+module app/unit-testing/first
 
 go 1.21.2
 

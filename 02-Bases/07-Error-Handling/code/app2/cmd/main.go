@@ -1,8 +1,8 @@
 package main
 
 import (
-	"app/internal"
-	"app/internal/repository"
+	"app/error-handling/second/internal"
+	"app/error-handling/second/internal/repository"
 	"errors"
 	"fmt"
 )

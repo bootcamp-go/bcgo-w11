@@ -1,7 +1,7 @@
 package main
 
 import (
-	"app/internal/calculator"
+	"app/functions/internal/calculator"
 	"fmt"
 )
 

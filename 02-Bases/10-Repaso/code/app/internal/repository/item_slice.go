@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"app/internal"
+	"app/repaso/internal"
 )
 
 type ItemSlice struct {

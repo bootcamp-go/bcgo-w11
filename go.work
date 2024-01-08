@@ -1,0 +1,19 @@
+go 1.21.2
+
+use (
+	./02-Bases/01-Packages/app
+	./02-Bases/02-Types/structure/app
+	./02-Bases/02-Types/structure/lib
+	./02-Bases/03-Functions/code/app
+	./02-Bases/04-Unit-Testing/code/app
+	./02-Bases/04-Unit-Testing/solutions/1
+	./02-Bases/04-Unit-Testing/solutions/2
+	./02-Bases/04-Unit-Testing/solutions/3
+	./02-Bases/04-Unit-Testing/solutions/4
+	./02-Bases/04-Unit-Testing/solutions/5
+	./02-Bases/05-Structs-Composition/code/app
+	./02-Bases/06-Interfaces/app
+	./02-Bases/07-Error-Handling/code/app
+	./02-Bases/07-Error-Handling/code/app2
+	./02-Bases/10-Repaso/code/app
+)

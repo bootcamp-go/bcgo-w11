@@ -1,8 +1,8 @@
 package main
 
 import (
-	"app/internal"
-	"app/internal/storage"
+	"app/interfaces/internal"
+	"app/interfaces/internal/storage"
 	"fmt"
 )
 

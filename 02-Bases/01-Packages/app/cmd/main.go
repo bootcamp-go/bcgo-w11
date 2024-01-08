@@ -1,7 +1,7 @@
 package main
 
 import (
-	"app/internal/calculator"
+	"app/packages/internal/calculator"
 	"fmt"
 
 	"github.com/fatih/color"

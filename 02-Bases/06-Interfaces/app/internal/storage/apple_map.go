@@ -1,6 +1,6 @@
 package storage
 
-import "app/internal"
+import "app/interfaces/internal"
 
 func NewAppleMap(apples map[int]internal.Apple, lastId int) *AppleMap {
 	// default values

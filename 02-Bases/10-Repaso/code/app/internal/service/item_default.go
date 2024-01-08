@@ -1,7 +1,7 @@
 package service
 
 import (
-	"app/internal"
+	"app/repaso/internal"
 )
 
 type ItemDefault struct {
