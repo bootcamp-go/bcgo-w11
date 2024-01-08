@@ -17,5 +17,6 @@ use (
 	./02-Bases/06-Interfaces/solutions/2
 	./02-Bases/07-Error-Handling/code/app
 	./02-Bases/07-Error-Handling/code/app2
+	./02-Bases/07-Error-Handling/solutions/5
 	./02-Bases/10-Repaso/code/app
 )
