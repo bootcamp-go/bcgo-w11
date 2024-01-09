@@ -21,4 +21,6 @@ use (
 	./02-Bases/10-Repaso/code/app
 	./02-Bases/11-Desafio-Cierre/app
 	./03-Web/01-Intro/code/network/03-chi
+	./03-Web/02-Get/code/chi/routing
+	./03-Web/02-Get/code/chi/scaff
 )
