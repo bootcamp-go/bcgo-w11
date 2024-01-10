@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "Smart TV",
+        "description": "This is a smart TV",
+        "category": "TV",
+        "price": 1000,
+        "quantity": 10
+    },
+    {
+        "id": "2",
+        "name": "Smart Phone",
+        "category": "Phone",
+        "price": 500,
+        "quantity": 20
+    },
+    {
+        "id": "3",
+        "name": "Smart Watch",
+        "description": "This is a smart watch",
+        "category": "Watch",
+        "price": 200,
+        "quantity": 30,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/61XqW9fjNCL._AC_SL1500_.jpg",
+    }
+]

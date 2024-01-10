@@ -1,0 +1,6 @@
+id,name,category,price,quantity
+1,apple,fruit,1.00,10
+2,banana,fruit,2.00,20
+3,carrot,vegetable,3.00,30
+4,daikon,vegetable,4.00,40
+5,egg,protein,5.00,50
