@@ -23,4 +23,5 @@ use (
 	./03-Web/01-Intro/code/network/03-chi
 	./03-Web/02-Get/code/chi/routing
 	./03-Web/02-Get/code/chi/scaff
+	./03-Web/05-Put-Patch-Delete/code/after
 )
