@@ -37,10 +37,13 @@ En la práctica para `coordinar` al sistema y las `interfaces`, desarrollaremos 
 
 Este enfoque de diseño permite que el flujo de trabajo dentro del sistema sea claro y bien definido. El controlador gestiona las interacciones con el usuario o el cliente, pasando los requisitos al servicio. Luego, el servicio procesa la lógica de negocio y se comunica con la capa de repositorio para acceder o modificar los datos. Así, la estructura general del sistema sigue un flujo lineal: controller -> service -> repository.
 
-
 #### Notas
 Es importante destacar que, aunque las interfaces definen cómo se comunican las distintas capas, no dictan la lógica específica de cada implementación.
 La verdadera coordinación y flujo del sistema se establece a través de cómo estas interfaces son implementadas y cómo se manejan las dependencias entre ellas, permitiendo construir sistemas robustos a partir de componentes más pequeños y bien definidos.
+
+#### Estructura de Carpetas
+En la carpeta `internal` declararemos el domain, incluyendo schemas e interfaces
+En subcarpetas o `subpackages` las implementaciones concretas para cada capa: application, handler, service, repository
 
 ## Platform
 
