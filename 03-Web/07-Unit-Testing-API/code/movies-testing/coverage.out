@@ -1,0 +1,11 @@
+mode: set
+movies-testing/internal/handler/task_default.go:15.62,19.2 1 1
+movies-testing/internal/handler/task_default.go:36.50,37.54 1 1
+movies-testing/internal/handler/task_default.go:37.54,43.17 2 1
+movies-testing/internal/handler/task_default.go:43.17,46.4 2 1
+movies-testing/internal/handler/task_default.go:49.3,50.17 2 1
+movies-testing/internal/handler/task_default.go:50.17,51.11 1 1
+movies-testing/internal/handler/task_default.go:52.50,53.61 1 1
+movies-testing/internal/handler/task_default.go:54.12,55.79 1 0
+movies-testing/internal/handler/task_default.go:57.4,57.10 1 1
+movies-testing/internal/handler/task_default.go:61.3,67.40 2 1

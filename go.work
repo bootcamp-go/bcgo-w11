@@ -25,4 +25,5 @@ use (
 	./03-Web/02-Get/code/chi/scaff
 	./03-Web/04-Estructura-API/code/after
 	./03-Web/05-Put-Patch-Delete/code/after
+	./03-Web/07-Unit-Testing-API/code/movies-testing
 )
