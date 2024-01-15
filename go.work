@@ -27,4 +27,5 @@ use (
 	./03-Web/05-Put-Patch-Delete/code/after
 	./03-Web/07-Unit-Testing-API/code/movies-testing
 	./03-Web/08-Middlewares/middlewares
+	./03-Web/10-Repaso
 )
