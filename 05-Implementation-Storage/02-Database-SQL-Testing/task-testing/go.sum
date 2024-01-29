@@ -1,0 +1,6 @@
+github.com/DATA-DOG/go-txdb v0.1.8 h1:LHWCog6FEzwGCmWEH8/XfOgIYKfWfO9dpRr9KwR4VQA=
+github.com/DATA-DOG/go-txdb v0.1.8/go.mod h1:l06JaBQdV+y4aWAmDmWj4NwfnJknEXBxg8d4B8sJzXA=
+github.com/go-sql-driver/mysql v1.7.1 h1:lUIinVbN1DY0xBg0eMOzmmtGoHwWBbvnWubQUrtU8EI=
+github.com/go-sql-driver/mysql v1.7.1/go.mod h1:OXbVy3sEdcQ2Doequ6Z5BW6fXNQTmx+9S1MCJN5yJMI=
+github.com/lib/pq v1.10.9 h1:YXG7RB+JIjhP29X+OtkiDnYaXQwpS4JEWq7dtCCRUEw=
+github.com/lib/pq v1.10.9/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=

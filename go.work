@@ -28,4 +28,7 @@ use (
 	./03-Web/07-Unit-Testing-API/code/movies-testing
 	./03-Web/08-Middlewares/middlewares
 	./03-Web/10-Repaso
+	./05-Implementation-Storage/01-Database-SQL
+	./05-Implementation-Storage/02-Database-SQL-Testing/task-joins
+	./05-Implementation-Storage/02-Database-SQL-Testing/task-testing
 )
