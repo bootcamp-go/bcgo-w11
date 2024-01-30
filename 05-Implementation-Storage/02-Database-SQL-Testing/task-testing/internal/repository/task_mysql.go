@@ -1,9 +1,11 @@
 package repository
 
 import (
+	"context"
 	"database/sql"
 	"errors"
 	"task-testing/internal"
+	"time"
 
 	"github.com/go-sql-driver/mysql"
 )
@@ -69,9 +71,16 @@ func (t *TaskMySQL) FindAll() (tasks []internal.Task, err error) {
 // Save saves a task
 func (t *TaskMySQL) Save(task *internal.Task) (err error) {
 	// execute the query
-	result, err := t.db.Exec(
+	// result, err := t.db.Exec(
+	// 	"INSERT INTO `tasks` (`name`, `description`, `completed`, `created_at`) VALUES (?, ?, ?, ?)",
+	// 	task.Name, task.Description, task.Completed, task.CreatedAt,
+	// )
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+	result, err := t.db.ExecContext(
+		ctx,
 		"INSERT INTO `tasks` (`name`, `description`, `completed`, `created_at`) VALUES (?, ?, ?, ?)",
-		task.Name, task.Description, task.Completed, task.CreatedAt,
+		(*task).Name, (*task).Description, (*task).Completed, (*task).CreatedAt,
 	)
 	if err != nil {
 		var mysqlErr *mysql.MySQLError

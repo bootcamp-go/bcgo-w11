@@ -32,3 +32,16 @@ func main() {
 		return
 	}
 }
+
+// func Random() (err error) {
+// 	result, err := ...
+// 	if err != nil {
+// 		if err == sql.ErrNoRows {
+// 			err = internal.ErrTaskNotFound
+// 			return
+// 		}
+// 		return
+// 	}
+
+// 	return
+// }
