@@ -32,4 +32,5 @@ use (
 	./05-Implementation-Storage/02-Database-SQL-Testing/task-joins
 	./05-Implementation-Storage/02-Database-SQL-Testing/task-testing
 	./06-Testing/02-Unit-Testing
+	./06-Testing/03-Doubles
 )
