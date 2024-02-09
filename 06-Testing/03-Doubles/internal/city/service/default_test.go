@@ -136,3 +136,48 @@ func TestDefaultAddCity(t *testing.T) {
 
 	})
 }
+
+func TestDefaultAddCity_Testify(t *testing.T) {
+	t.Run("success - add city", func(t *testing.T) {
+		// arrange
+		// - logger
+		lg := logger.NewDummy()
+		// - weather API
+		wa := weather.NewWeatherStub()
+		wa.FuncGetTemperature = func (city string) (degrees float64, err error) {
+			degrees = 50.0
+			return
+		}
+		// - repository writer
+		rp := repository.NewMock()
+		rp.On("SaveCity", &city.City{
+			ID: 0,
+			Name: "Paris",
+			Country: "France",
+			Population: 2_200_000,
+			Date: time.Date(2020, 1, 1, 0, 0, 0, 0, time.UTC),
+			Temperature: 50.0,
+		}).Return(nil)
+		rp.FuncSaveCity = func(c *city.City) {
+			c.ID = 1
+		}
+		// - service
+		sv := service.NewDefault(rp, wa, lg)
+
+		// act
+		c, err := sv.AddCity("Paris", "France", 2_200_000, time.Date(2020, 1, 1, 0, 0, 0, 0, time.UTC))
+
+		// assert
+		expectedCity := city.City{
+			ID:         1,
+			Name:       "Paris",
+			Country:    "France",
+			Population: 2_200_000,
+			Date:       time.Date(2020, 1, 1, 0, 0, 0, 0, time.UTC),
+			Temperature: 50.0,
+		}
+		require.Equal(t, expectedCity, c)
+		require.NoError(t, err)
+		rp.AssertExpectations(t)
+	})
+}
