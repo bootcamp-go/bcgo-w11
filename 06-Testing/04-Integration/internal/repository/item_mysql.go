@@ -11,34 +11,25 @@ type ItemMySQL struct {
 }
 
 // NewItemMysql returns a new ItemMySQL
-func NewItemMysql(db *sql.DB) *ItemMySQL {
+func NewItemMySQL(db *sql.DB) *ItemMySQL {
 	return &ItemMySQL{db}
 }
 
 // FindAll returns all items in the database
-func (m *ItemMySQL) FindAll() (i []internal.Item, err error) {
+func (m *ItemMySQL) FindById(id int) (i internal.Item, err error) {
 	// execute the query
-	rows, err := m.db.Query("SELECT i.`id`, i.`name`, i.`description`, i.`price` FROM `items` i")
+	row := m.db.QueryRow("SELECT `id`, `name`, `description`, `price` FROM `items` WHERE `id` = ?", id)
+
+	// scan the row into the item
+	err = row.Scan(&i.ID, &i.Name, &i.Description, &i.Price)
 	if err != nil {
-		return nil, err
-	}
-
-	// iterate over the rows
-	for rows.Next() {
-		var item internal.Item
-		// scan the row into the item
-		err = rows.Scan(&item.ID, &item.Name, &item.Description, &item.Price)
-		if err != nil {
-			return nil, err
+		switch {
+		case err == sql.ErrNoRows:
+			err = internal.ErrRepositoryNotFound
+		default:
+			err = internal.ErrRepositoryInternal
 		}
-
-		// append the item to the slice
-		i = append(i, item)
-	}
-
-	// check if there was an error while iterating over the rows
-	if rows.Err() != nil {
-		err = rows.Err()
+		return
 	}
 
 	return
