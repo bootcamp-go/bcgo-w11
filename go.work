@@ -34,4 +34,6 @@ use (
 	./06-Testing/02-Unit-Testing
 	./06-Testing/03-Doubles
 	./06-Testing/04-Integration
+	./06-Testing/05-Coverage-Linter
+	./06-Testing/06-Repaso
 )

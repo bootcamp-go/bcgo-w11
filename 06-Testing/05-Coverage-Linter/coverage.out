@@ -1,0 +1,14 @@
+mode: count
+go-testing/coverage-linter/calculator/addition.go:4.38,7.2 2 0
+go-testing/coverage-linter/calculator/division.go:17.49,19.22 1 1
+go-testing/coverage-linter/calculator/division.go:19.22,22.3 2 1
+go-testing/coverage-linter/calculator/division.go:25.2,25.12 1 0
+go-testing/coverage-linter/calculator/division.go:25.12,28.3 2 0
+go-testing/coverage-linter/calculator/division.go:30.2,31.8 2 0
+go-testing/coverage-linter/calculator/division.go:34.29,36.2 1 0
+go-testing/coverage-linter/calculator/is_prime.go:4.31,6.33 1 4
+go-testing/coverage-linter/calculator/is_prime.go:6.33,8.3 1 1
+go-testing/coverage-linter/calculator/is_prime.go:11.2,11.28 1 3
+go-testing/coverage-linter/calculator/is_prime.go:11.28,13.15 1 1
+go-testing/coverage-linter/calculator/is_prime.go:13.15,15.4 1 1
+go-testing/coverage-linter/calculator/is_prime.go:18.2,19.8 2 2
